@@ -352,7 +352,6 @@ function WelcomeScene:httpNewVersion()
 	end
 
 	appdf.onHttpJsionTable(URL_REQUEST .. "/WS/MobileInterface.ashx","get","action=getgamelist",vcallback)
-	--appdf.onHttpJsionTable("http://172.16.4.140/gamelist.php","get","",vcallback)
 end
 
 --服务器版本返回
