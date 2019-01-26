@@ -1,0 +1,99 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=gb2312">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=宋体 size=+3>
+生成日志
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- 已启动生成: 项目: 服务核心，配置: Release_Unicode|Win32 -------
+</h3>
+</pre></table><table width=100%% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+命令行
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>正在创建临时文件“f:\workroot\trunk\server\系统模块\公共组件\服务核心\Release_Unicode\RSP000001.rsp”，其内容为
+[
+/O2 /D "JSON_DLL_BUILD" /D "WIN32" /D "_WINDOWS" /D "NDEBUG" /D "_AFXEXT" /D "SERVICE_CORE_DLL" /D "_UNICODE" /D "_WINDLL" /D "_AFXDLL" /D "UNICODE" /FD /EHsc /MD /GS /Zc:wchar_t /Yu"stdafx.h" /Fp"Release_Unicode/ServiceCore.pch" /Fo"Release_Unicode/" /Fd"Release_Unicode/vc70.pdb" /W3 /c /Wp64 /Zi /TP
+.\WHThread.cpp
+.\WHService.cpp
+.\WHRegKey.cpp
+.\WHMD5CheckSum.cpp
+.\WHIniData.cpp
+.\WHEncrypt.cpp
+.\WHDataQueue.cpp
+.\WHDataLocker.cpp
+.\WHCommandLine.cpp
+.\ServiceCore.cpp
+]
+正在创建命令行“cl.exe @f:\workroot\trunk\server\系统模块\公共组件\服务核心\Release_Unicode\RSP000001.rsp /nologo”
+正在创建临时文件“f:\workroot\trunk\server\系统模块\公共组件\服务核心\Release_Unicode\RSP000002.rsp”，其内容为
+[
+/O2 /D "JSON_DLL_BUILD" /D "WIN32" /D "_WINDOWS" /D "NDEBUG" /D "_AFXEXT" /D "SERVICE_CORE_DLL" /D "_UNICODE" /D "_WINDLL" /D "_AFXDLL" /D "UNICODE" /FD /EHsc /MD /GS /Zc:wchar_t /Yc"stdafx.h" /Fp"Release_Unicode/ServiceCore.pch" /Fo"Release_Unicode/" /Fd"Release_Unicode/vc70.pdb" /W3 /c /Wp64 /Zi /TP
+.\Stdafx.cpp
+]
+正在创建命令行“cl.exe @f:\workroot\trunk\server\系统模块\公共组件\服务核心\Release_Unicode\RSP000002.rsp /nologo”
+正在创建命令行“rc.exe /d "NDEBUG" /d "_AFXDLL" /d "_UNICODE" /d "UNICODE" /l 0x804 /I "Release_Unicode" /fo"Release_Unicode/ServiceCore.res" .\ServiceCore.rc”
+正在创建临时文件“f:\workroot\trunk\server\系统模块\公共组件\服务核心\Release_Unicode\RSP000003.rsp”，其内容为
+[
+/OUT:"../../../运行/Release/Unicode/ServiceCore.dll" /INCREMENTAL:NO /NOLOGO /DLL /DEF:".\ServiceCore.def" /DEBUG /PDB:"Release_Unicode/服务核心.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /IMPLIB:"../../链接库/Unicode/ServiceCore.lib" /MACHINE:X86
+.\Release_Unicode\ServiceCore.obj
+.\Release_Unicode\Stdafx.obj
+.\Release_Unicode\WHCommandLine.obj
+.\Release_Unicode\WHDataLocker.obj
+.\Release_Unicode\WHDataQueue.obj
+.\Release_Unicode\WHEncrypt.obj
+.\Release_Unicode\WHIniData.obj
+.\Release_Unicode\WHMD5CheckSum.obj
+.\Release_Unicode\WHRegKey.obj
+.\Release_Unicode\WHService.obj
+.\Release_Unicode\WHThread.obj
+.\Release_Unicode\ServiceCore.res
+]
+正在创建命令行“link.exe @f:\workroot\trunk\server\系统模块\公共组件\服务核心\Release_Unicode\RSP000003.rsp”
+正在创建临时文件“f:\workroot\trunk\server\系统模块\公共组件\服务核心\Release_Unicode\BAT000004.bat”，其内容为
+[
+@echo off
+mkdir ..\..\..\发布组件\服务器组件\Release\Unicode
+mkdir ..\..\..\发布组件\客户端组件\Release\Unicode
+copy /y ..\..\..\运行\Release\Unicode\ServiceCore.dll ..\..\..\发布组件\服务器组件\Release\Unicode\ServiceCore.dll
+copy /y ..\..\..\运行\Release\Unicode\ServiceCore.dll ..\..\..\发布组件\客户端组件\Release\Unicode\ServiceCore.dll
+
+if errorlevel 1 goto VCReportError
+goto VCEnd
+:VCReportError
+echo Project : error PRJ0019: 工具从"正在执行生成后事件..."
+exit 1
+:VCEnd
+]
+正在创建命令行“f:\workroot\trunk\server\系统模块\公共组件\服务核心\Release_Unicode\BAT000004.bat”
+</pre></table><table width=100%% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+输出窗口
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>正在编译...
+Stdafx.cpp
+正在编译...
+WHThread.cpp
+WHService.cpp
+WHRegKey.cpp
+WHMD5CheckSum.cpp
+WHIniData.cpp
+WHEncrypt.cpp
+WHDataQueue.cpp
+WHDataLocker.cpp
+WHCommandLine.cpp
+ServiceCore.cpp
+正在生成代码...
+正在编译资源...
+正在链接...
+   正在创建库 ../../链接库/Unicode/ServiceCore.lib 和对象 ../../链接库/Unicode/ServiceCore.exp
+LINK : warning LNK4089: /OPT:REF 已丢弃所有对“OLEAUT32.dll”的引用
+正在执行生成后事件...
+子目录或文件 ..\..\..\发布组件\服务器组件\Release\Unicode 已经存在。
+子目录或文件 ..\..\..\发布组件\客户端组件\Release\Unicode 已经存在。
+已复制         1 个文件。
+已复制         1 个文件。
+</pre></table><table width=100%% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+结果
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+生成日志保存在“file://f:\workroot\trunk\server\系统模块\公共组件\服务核心\Release_Unicode\BuildLog.htm”中
+服务核心 - 0 错误，1 警告</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=宋体 size=+2>
+</font></table></body></html>

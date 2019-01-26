@@ -1,0 +1,223 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\Server_shz.rc2""  // 不是由 Microsoft Visual C++ 编辑过的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "Comments", "深圳市网狐科技有限公司"
+            VALUE "CompanyName", "深圳市网狐科技有限公司"
+            VALUE "FileDescription", "水果拉霸服务器组件"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "SGLBServer.dll"
+            VALUE "LegalCopyright", "深圳市网狐科技有限公司保留所有权利。"
+            VALUE "OriginalFilename", "SGLBServer.dll"
+            VALUE "ProductName", "水果拉霸服务器组件"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CUSTOM_RULE DIALOGEX 0, 0, 344, 313
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "控制",IDC_STATIC,5,21,339,231
+    EDITTEXT        IDC_EDIT_STORAGE_START_TABLE,96,31,79,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "房间库存起始值:",IDC_STATIC,19,34,65,9
+    LTEXT           "全局库存衰减值:",IDC_STATIC,19,51,65,9
+    LTEXT           "全局库存封顶值1:",IDC_STATIC,19,69,65,9
+    LTEXT           "全局库存封顶值2:",IDC_STATIC,19,102,65,9
+    LTEXT           "全局赢分概率1:",IDC_STATIC,19,86,65,9
+    LTEXT           "全局赢分概率2:",IDC_STATIC,19,118,65,9
+    EDITTEXT        IDC_EDIT_STORAGE_DEDUCT_ROOM,96,48,79,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    EDITTEXT        IDC_EDIT_STORAGE_MAX1_ROOM,96,66,79,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_STORAGE_MUL1_ROOM,96,83,79,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_STORAGE_MAX2_ROOM,96,99,79,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_STORAGE_MUL2_ROOM,96,115,79,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "",IDC_STATIC,205,34,98,9
+    LTEXT           "（对该房间所有桌子有效）",IDC_STATIC,205,51,98,9
+    LTEXT           "（对该房间所有桌子有效）",IDC_STATIC,205,102,98,9
+    LTEXT           "（对该房间所有桌子有效）",IDC_STATIC,205,86,98,9
+    LTEXT           "（对该房间所有桌子有效）",IDC_STATIC,205,69,98,9
+    LTEXT           "（对该房间所有桌子有效）",IDC_STATIC,205,118,98,9
+    EDITTEXT        IDC_EDIT_BET_SCORE_1,16,186,72,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_BET_SCORE_2,91,186,72,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_BET_SCORE_3,167,186,72,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_BET_SCORE_4,243,186,72,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_BET_SCORE_5,16,204,72,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_BET_SCORE_6,91,204,72,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_BET_SCORE_7,167,204,72,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_BET_SCORE_8,243,204,72,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_BET_SCORE_9,16,222,72,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "下注大小（要设置几个填几个，0或空为不设置，至少填一个）",IDC_STATIC,18,172,300,8
+
+    LTEXT           "比倍中奖概率:",IDC_STATIC,20,133,65,9
+    EDITTEXT        IDC_EDIT_GAME_TWO,96,131,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "（对该房间所有桌子有效）",IDC_STATIC,206,133,98,9
+    LTEXT           "小玛丽中奖概率:",IDC_STATIC,20,150,65,9
+    EDITTEXT        IDC_EDIT_GAME_THREE,96,147,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "（对该房间所有桌子有效）",IDC_STATIC,206,150,98,9
+    EDITTEXT        IDC_EDIT_GAME_TWO_DEDUCT,169,130,29,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_GAME_THREE_DEDUCT,169,146,29,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "衰减比例:",IDC_STATIC,130,133,39,9
+    LTEXT           "衰减比例:",IDC_STATIC,129,148,40,9
+
+	LTEXT           "第一关分数:", IDC_STATIC, 260, 240, 40, 9
+    EDITTEXT        IDC_EDIT_SMALL_SORCE_1,16,240,60,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_SMALL_SORCE_2,76,240,60,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_SMALL_SORCE_3,136,240,60,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_SMALL_SORCE_4,196,240,60,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_SMALL_SORCE_5,256,240,60,12,ES_AUTOHSCROLL | ES_NUMBER
+
+    EDITTEXT        IDC_EDIT_SMALL_SORCE_6,16,258,60,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_SMALL_SORCE_7,76,258,60,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_SMALL_SORCE_8,136,258,60,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_SMALL_SORCE_9,196,258,60,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_SMALL_SORCE_10,256,258,60,12,ES_AUTOHSCROLL | ES_NUMBER
+
+    EDITTEXT        IDC_EDIT_SMALL_SORCE_11,16,276,60,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_SMALL_SORCE_12,76,276,60,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_SMALL_SORCE_13,136,276,60,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_SMALL_SORCE_14,196,276,60,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_SMALL_SORCE_15,256,276,60,12,ES_AUTOHSCROLL | ES_NUMBER
+
+    EDITTEXT        IDC_EDIT_SMALL_SORCE_16,16,294,60,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_SMALL_SORCE_17,76,294,60,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_SMALL_SORCE_18,136,294,60,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_SMALL_SORCE_19,196,294,60,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_SMALL_SORCE_20,256,294,60,12,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+SERVER_ICON             ICON                    "res\\GameClient.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_CUSTOM_RULE, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 284
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\Server_shz.rc2"  // 不是由 Microsoft Visual C++ 编辑过的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

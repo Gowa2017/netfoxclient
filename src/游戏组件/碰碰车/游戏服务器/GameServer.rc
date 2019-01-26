@@ -1,0 +1,263 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\GameServer.rc2""  // 不是由 Microsoft Visual C++ 编辑过的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 6,7,0,1
+ PRODUCTVERSION 6,7,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "Comments", "深圳市网狐科技有限公司"
+            VALUE "CompanyName", "深圳市网狐科技有限公司"
+            VALUE "FileDescription", "碰碰车游戏服务器组件"
+            VALUE "FileVersion", "6, 7, 0, 1"
+            VALUE "InternalName", "BumperCarBattleServer.DLL"
+            VALUE "LegalCopyright", "深圳市网狐科技有限公司保留所有权利。"
+            VALUE "OriginalFilename", "BumperCarBattleServer.DLL"
+            VALUE "ProductName", "碰碰车游戏服务器组件"
+            VALUE "ProductVersion", "6, 7, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CUSTOM_ANDROID DIALOGEX 0, 0, 350, 225
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_ANDROID_1,75,24,84,14,ES_AUTOHSCROLL
+    LTEXT           "坐庄次数：",IDC_STATIC,17,28,57,10
+    GROUPBOX        "机器人坐庄",IDC_STATIC,2,2,334,68
+    GROUPBOX        "机器人下注",IDC_STATIC,2,71,334,70
+    GROUPBOX        "机器人存取款",IDC_STATIC,0,152,334,62
+    CONTROL         "机器人是否坐庄",IDC_CHECK_ANDROID_1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,22,12,77,10
+    LTEXT           "列表最低人数：",IDC_STATIC,17,41,57,10
+    LTEXT           "最多申请个数：",IDC_STATIC,17,55,57,10
+    LTEXT           "列表最高人数：",IDC_STATIC,173,41,57,10
+    LTEXT           "空几盘后坐庄：",IDC_STATIC,173,55,57,10
+    EDITTEXT        IDC_EDIT_ANDROID_3,75,38,84,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ANDROID_5,75,52,84,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ANDROID_4,232,38,84,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ANDROID_6,232,52,84,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ANDROID_7,75,81,84,14,ES_AUTOHSCROLL
+    LTEXT           "筹码个数最少：",IDC_STATIC,17,85,57,10
+    LTEXT           "筹码金额最小：",IDC_STATIC,17,98,57,10
+    LTEXT           "下注人数最少：",IDC_STATIC,17,112,57,10
+    LTEXT           "筹码个数最多：",IDC_STATIC,173,85,57,10
+    LTEXT           "筹码金额最大：",IDC_STATIC,173,98,57,10
+    LTEXT           "下注人数最多：",IDC_STATIC,173,112,57,10
+    EDITTEXT        IDC_EDIT_ANDROID_9,75,95,84,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ANDROID_11,75,109,84,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ANDROID_8,232,81,84,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ANDROID_10,232,95,84,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ANDROID_12,232,109,84,14,ES_AUTOHSCROLL
+    LTEXT           "下注区域限制：",IDC_STATIC,17,126,57,10
+    EDITTEXT        IDC_EDIT_ANDROID_13,75,123,84,14,ES_AUTOHSCROLL
+    RTEXT           "低于该值取款：",IDC_STATIC,14,167,60,10
+    RTEXT           "取款最小值：",IDC_STATIC,18,181,56,10
+    RTEXT           "高于该值存款：",IDC_STATIC,162,168,68,10
+    RTEXT           "取款最大值：",IDC_STATIC,171,181,59,10
+    EDITTEXT        IDC_EDIT_ANDROID_16,75,164,72,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ANDROID_18,75,178,72,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ANDROID_17,232,164,72,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ANDROID_19,232,178,72,14,ES_AUTOHSCROLL
+    RTEXT           "存款百分比：",IDC_STATIC,17,195,57,10
+    EDITTEXT        IDC_EDIT_ANDROID_20,75,192,72,14,ES_AUTOHSCROLL
+END
+
+IDD_CUSTOM_GENERAL DIALOGEX 0, 0, 352, 235
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    LTEXT           "消息一：",IDC_STATIC,11,114,40,10
+    EDITTEXT        IDC_EDIT_GENERAL_1,60,11,84,14,ES_AUTOHSCROLL
+    LTEXT           "消息二：",IDC_STATIC,11,128,40,10
+    LTEXT           "消息三：",IDC_STATIC,11,142,40,10
+    LTEXT           "额外条件：",IDC_STATIC,13,56,40,10
+    LTEXT           "额外局数：",IDC_STATIC,13,70,40,10
+    GROUPBOX        "上庄控制",IDC_STATIC,6,3,153,94
+    EDITTEXT        IDC_EDIT_GENERAL_2,60,25,84,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_GENERAL_3,60,39,84,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_GENERAL_4,60,53,84,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_GENERAL_5,60,67,84,14,ES_AUTOHSCROLL
+    CONTROL         "系统坐庄",IDC_CHECK_GENERAL_1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,31,83,51,10
+    GROUPBOX        "时间控制",IDC_STATIC,168,2,167,51
+    GROUPBOX        "下注控制",IDC_STATIC,168,54,167,43
+    RTEXT           "空闲时间：",IDC_STATIC,197,13,40,10
+    RTEXT           "下注时间：",IDC_STATIC,197,27,40,10
+    RTEXT           "结束时间：",IDC_STATIC,197,42,40,10
+    RTEXT           "区域限制：",IDC_STATIC,197,67,40,10
+    RTEXT           "个人限制：",IDC_STATIC,197,81,40,10
+    EDITTEXT        IDC_EDIT_GENERAL_6,243,9,84,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_GENERAL_7,243,23,84,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_GENERAL_8,243,37,84,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_GENERAL_9,243,63,84,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_GENERAL_10,243,77,84,14,ES_AUTOHSCROLL
+    GROUPBOX        "消息控制",IDC_STATIC,5,103,329,53
+    GROUPBOX        "库存控制",IDC_STATIC,5,157,329,54
+    EDITTEXT        IDC_EDIT_GENERAL_11,102,111,225,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_GENERAL_12,102,125,225,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_GENERAL_13,102,139,225,14,ES_AUTOHSCROLL
+    RTEXT           "库存起始值：",IDC_STATIC,10,169,54,10
+    LTEXT           "【%s】上庄了，",IDC_STATIC,44,114,57,10
+    LTEXT           "【%s】上庄了，",IDC_STATIC,44,128,57,10
+    LTEXT           "【%s】上庄了，",IDC_STATIC,44,142,57,10
+    LTEXT           "上庄条件：",IDC_STATIC,13,15,40,10
+    LTEXT           "坐庄局数：",IDC_STATIC,13,28,40,10
+    LTEXT           "增加局数：",IDC_STATIC,13,42,40,10
+    RTEXT           "库存衰减值：",IDC_STATIC,174,169,59,10
+    RTEXT           "库存上限值1：",IDC_STATIC,10,182,54,10
+    RTEXT           "库存上限值2：",IDC_STATIC,10,196,54,10
+    RTEXT           "玩家赢分概率：",IDC_STATIC,174,182,59,10
+    RTEXT           "玩家赢分概率：",IDC_STATIC,174,196,59,10
+    EDITTEXT        IDC_EDIT_GENERAL_14,74,165,84,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_GENERAL_16,74,180,84,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_GENERAL_18,74,194,84,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_GENERAL_15,243,165,84,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_GENERAL_17,243,179,84,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_GENERAL_19,243,193,84,14,ES_AUTOHSCROLL
+END
+
+IDD_CUSTOM_RULE DIALOGEX 0, 0, 344, 228
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_TAB_CUSTOM,"SysTabControl32",0x0,0,0,344,228
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CUSTOM_ANDROID, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 224
+    END
+
+    IDD_CUSTOM_GENERAL, DIALOG
+    BEGIN
+        RIGHTMARGIN, 342
+        BOTTOMMARGIN, 234
+    END
+
+    IDD_CUSTOM_RULE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 341
+        BOTTOMMARGIN, 226
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\GameServer.rc2"  // 不是由 Microsoft Visual C++ 编辑过的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
