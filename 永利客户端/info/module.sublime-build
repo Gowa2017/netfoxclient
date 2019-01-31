@@ -1,0 +1,8 @@
+{
+	"cmd":["E:/zhenqian/RYMobile/run/Debug.win32/GloryProject.exe","E:/zhenqian/client"],
+	"working_dir" : "E:/zhenqian/Client/client/base/src",
+  	"file_regex": "^(...*?):([0-9]*):?([0-9]*)",  
+    "shell": true,
+    "encoding":"utf-8",
+    "selector":"source.lua"
+}

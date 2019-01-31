@@ -1,0 +1,10 @@
+
+cmd 下
+D:\Mobile\info>MakeMD5List -dst d:\ -src d:\Mobile\client\client
+dst下生成
+filemd5List.json
+
+filemd5List.json
+用于以后热更新对比文件用
+client的放下client\res\下面
+game的放在game\分类\游戏名\res\下面

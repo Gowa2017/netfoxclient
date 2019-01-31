@@ -1,0 +1,9 @@
+[name:游戏中文名, des:md5路径(用于生成md5版本文件), ori:源路径(用于拷贝), zipped:是否添加到压缩列表， folder:目录(用于压缩指定游戏)， primode:是否有私人房]
+
+
+name=不洗牌斗地主,des=client\ciphercode\game\qipai\landnoshuffle,ori=game\qipai\landnoshuffle,folder=landnoshuffle,zipped=0,primode=1
+name=龙凤斗,des=client\ciphercode\game\xiuxian\longfengdou,ori=game\xiuxian\longfengdou,folder=longfengdou,zipped=0,primode=1
+name=李逵劈鱼,des=client\ciphercode\game\yule\xlkpy,ori=game\yule\xlkpy,folder=xlkpy,zipped=0,primode=1
+name=中发白,des=client\ciphercode\game\xiuxian\zhongfabai,ori=game\xiuxian\zhongfabai,folder=zhongfabai,zipped=0,primode=1
+name=百人牛牛,des=client\ciphercode\game\yule\oxbattle,ori=game\yule\oxbattle,folder=oxbattle,zipped=0,primode=1
+name=金蝉捕鱼,des=client\ciphercode\game\yule\jcby,ori=game\yule\jcby,folder=jcby,zipped=0,primode=1

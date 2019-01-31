@@ -1,0 +1,59 @@
+如果在源代码中，找不到一个标识符的声明，无论是变量名、类名或是方法名，则在编译时会得到Use of undeclared identifier ‘XXX’错误。
+而如果编译器找到了它的声明，而却不知道他怎么实现的，看不到实现代码或者说目标文件里没有这个实现，则就会出现链接错误。
+通常提示如下：
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+Undefined symbols for architecture armv7:
+  "_deflateEnd", referenced from:
+      -[ASIDataCompressor closeStream] in ASIDataCompressor.o
+  "_OBJC_CLASS_$_ASIDataDecompressor", referenced from:
+      objc-class-ref in ASIHTTPRequest.o
+  "_deflate", referenced from:
+      -[ASIDataCompressor compressBytes:length:error:shouldFinish:] in ASIDataCompressor.o
+  "_deflateInit2_", referenced from:
+      -[ASIDataCompressor setupStream] in ASIDataCompressor.o
+ld: symbol(s) not found for architecture armv7
+collect2: ld returned 1 exit status
+Command /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 failed with exit code 1
+直接翻译就是说“特定处理器架构指令集下，符号XXX未定义”。了解编译原理的朋友知道，在源码词法分析、语法分析以及编译的整个过程中，会生成符号表，而标识符都会被放到其中。
+就像上面所说，如果链接的时候，找不到具体的实现，就会出现这个错误。当然，这是最直接最简单的理解，编译器的提示很多时候不能帮助我们直接找到错误的根源。
+参考了StackOverflow一个帖子，写的很全，这个错误可能的根源基本上是如下几类：
+	▪	引入了需要用到的库的头文件，却没有链接正确的实现库。因为Xcode本身所支持的库是Static Library，即.a的方式，.a的文件里只有实现，使用的时候需要另外引入头文件，那么就有可能把头文件放进来，没有放.a或放入了错误的版本。
+	▪	Build Settings或者Build Phases配置有误。检查Build Phases里的Link Binary With Libraries和Build Settings里的几项Search Path。
+	▪	从外部导入的文件没有加入到特定的target中。这个正是我整理这篇日志之前遇到的，将.a、.m、.framework等引入到工程当中，却没有勾选当前Build的target，会出现这个问题，可以选中特定的文件，在右侧边栏中选中target。
+	▪	未包含处理器架构指令集的问题。报错时的提示一般都是“Undefined symbols for architecture armv7”之类的，而“for architecture armv7”就是说没有支持armv7，在Build settings里architecture相关的几项需要配置正确。
+有如上这几种情况的时候，会出现“Undefined symbols”的报错提示，这时候就要对提示中指出的特定symbol相关的文件仔细检查了。
+
+    判断framework或.a文件支持框架：
+
+lipo -info /Users/.../xFramework.framework/xFramework
+
+lipo -info  /Users/.../libXYPlatform.a
+
+    结果
+
+Architectures in the fat file: xsdkFramework are: armv7 arm64 不支持模拟器
+
+Architectures in the fat file: libUPPayPlugin.a are: armv7  arm64 i386 x86_64 支持真机和模拟器
+
+     framework的合并
+
+1.lipo -create /Users/.../RKPlatform.framework/RKPlatform /Users/.../RKPlatform.framework/RKPlatform -output /Users/.../Desktop/RKPlatform
+
+前两个是分别支持真机和模拟器的framework的路径 -output后是合并后输出可执行文件的路径
+
+2.然后把生成后的可执行文件RKPlatform替换合并前任意一个framework里面的可执行文件RKPlatform就OK了
+
+文／xywjun（简书作者）
+原文链接：http://www.jianshu.com/p/99a5ac602123
+著作权归作者所有，转载请联系作者获得授权，并标注“简书作者”。

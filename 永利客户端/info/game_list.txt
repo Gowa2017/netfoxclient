@@ -1,0 +1,3 @@
+[name:游戏中文名, des:md5路径(用于生成md5版本文件), ori:源路径(用于拷贝), zipped:是否添加到压缩列表， folder:目录(用于压缩指定游戏)， primode:是否有私人房]
+name=金蝉捕鱼,des=client\ciphercode\game\yule\jcby,ori=game\yule\jcby,folder=jcby,zipped=0,primode=1
+name=百人牛牛,des=client\ciphercode\game\yule\oxbattle,ori=game\yule\oxbattle,folder=oxbattle,zipped=0,primode=1
