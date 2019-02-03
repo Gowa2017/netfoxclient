@@ -1,0 +1,18 @@
+info face="FZDaHei-B02S" size=24 bold=0 italic=0 charset="" unicode=0 stretchH=100 smooth=1 aa=1 padding=0,0,0,0 spacing=2,2
+common lineHeight=27 base=21 scaleW=95 scaleH=100 pages=1 packed=0
+page id=0 file="coin_score.png"
+chars count=13
+char id=48     x=2     y=30    width=16    height=22    xoffset=1     yoffset=-0    xadvance=13    page=0  chnl=0  letter="0123456789x金币"
+char id=49     x=37    y=54    width=12    height=21    xoffset=2     yoffset=1     xadvance=13    page=0  chnl=0  letter="123456789x金币"
+char id=50     x=75    y=30    width=16    height=21    xoffset=1     yoffset=1     xadvance=13    page=0  chnl=0  letter="23456789x金币"
+char id=51     x=20    y=30    width=16    height=22    xoffset=1     yoffset=-0    xadvance=13    page=0  chnl=0  letter="3456789x金币"
+char id=52     x=56    y=30    width=17    height=21    xoffset=0     yoffset=1     xadvance=13    page=0  chnl=0  letter="456789x金币"
+char id=53     x=2     y=54    width=16    height=21    xoffset=1     yoffset=1     xadvance=13    page=0  chnl=0  letter="56789x金币"
+char id=54     x=57    y=2     width=17    height=22    xoffset=1     yoffset=-0    xadvance=13    page=0  chnl=0  letter="6789x金币"
+char id=55     x=20    y=54    width=15    height=21    xoffset=1     yoffset=1     xadvance=13    page=0  chnl=0  letter="789x金币"
+char id=56     x=76    y=2     width=17    height=22    xoffset=1     yoffset=-0    xadvance=13    page=0  chnl=0  letter="89x金币"
+char id=57     x=38    y=30    width=16    height=22    xoffset=0     yoffset=-0    xadvance=13    page=0  chnl=0  letter="9x金币"
+char id=120    x=51    y=54    width=17    height=17    xoffset=0     yoffset=5     xadvance=13    page=0  chnl=0  letter="x金币"
+char id=24065  x=31    y=2     width=24    height=26    xoffset=2     yoffset=-2    xadvance=24    page=0  chnl=0  letter="币"
+char id=37329  x=2     y=2     width=27    height=26    xoffset=1     yoffset=-2    xadvance=24    page=0  chnl=0  letter="金币"
+kernings count=0

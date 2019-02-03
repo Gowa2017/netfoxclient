@@ -1,0 +1,9 @@
+puremvc = puremvc or {}
+puremvc.VERSION = '1.0.0'
+puremvc.Facade = import('.patterns.facade.Facade')
+puremvc.Mediator = import('.patterns.mediator.Mediator')
+puremvc.Proxy = import('.patterns.proxy.Proxy')
+puremvc.SimpleCommand = import('.patterns.command.SimpleCommand')
+puremvc.MacroCommand = import('.patterns.command.MacroCommand')
+puremvc.Notifier = import('.patterns.observer.Notifier')
+puremvc.Notification = import('.patterns.observer.Notification')
