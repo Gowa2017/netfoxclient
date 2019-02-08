@@ -245,8 +245,8 @@ function ClientScene:ctor()
 		local vipIdx = GlobalUserItem.cbMemberOrder or 0
 		--裁切头像
 		local head = HeadSprite:createNormalCircle(GlobalUserItem, 100, "Circleframe.png")
-		head:setCascadeOpacityEnabled(true)
 		if nil ~= head then
+			head:setCascadeOpacityEnabled(true)
 			local personBtnContentSize = v:getContentSize()
 			head:setPosition(personBtnContentSize.width / 2, personBtnContentSize.height / 2)
 			v:addChild(head)
