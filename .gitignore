@@ -3,3 +3,4 @@
 *.plist
 *.ttf
 *.wav
+.DS_Store
